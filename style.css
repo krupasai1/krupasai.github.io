@@ -60,6 +60,6 @@ ul{
   border-radius: 5px;
   text-decoration: none;
   position: absolute;
-  top: 20px; /* Adjust the top and right values to position your button */
-  right: 20px;
+  top: 10px; /* Adjust the top and right values to position your button */
+  right: 10px;
 }
