@@ -63,3 +63,12 @@ ul{
   top: 10px; /* Adjust the top and right values to position your button */
   right: 10px;
 }
+
+.transparent-button {
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px;
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 5px;
+    text-decoration: none;
+  }
