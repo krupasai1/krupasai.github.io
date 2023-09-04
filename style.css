@@ -50,3 +50,16 @@ ul{
 .box li a:hover{
   color: #b9b9b9;
 }
+
+.pdf-button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  top: 20px; /* Adjust the top and right values to position your button */
+  right: 20px;
+}
