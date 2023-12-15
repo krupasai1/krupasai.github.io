@@ -1,53 +1,63 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background: url(bg.jpg) no-repeat;
   background-size: cover;
 }
-.box{
-  width: 450px;
+
+.box {
+  max-width: 80%; /* Adjust the maximum width as needed */
   background: rgba(0, 0, 0, 0.4);
-  padding: 40px;
+  padding: 5%; /* Use relative padding */
   text-align: center;
-  margin: auto;
-  margin-top: 5%;
+  margin: 5% auto; /* Use auto margin for centering */
   color: white;
-  font-family: 'Century Gothic',sans-serif;
+  font-family: 'Century Gothic', sans-serif;
 }
-.box-img{
+
+.box-img {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
 }
-.box h1{
-  font-size: 40px;
-  letter-spacing: 4px;
+
+.box h1 {
+  font-size: 4vw; /* Use viewport units for font size */
+  letter-spacing: 0.4vw;
   font-weight: 100;
+  margin-bottom: 2vw; /* Use viewport units for margin */
 }
-.box h5{
-  font-size: 20px;
-  letter-spacing: 3px;
+
+.box h5 {
+  font-size: 2vw; /* Use viewport units for font size */
+  letter-spacing: 0.3vw;
   font-weight: 100;
+  margin-bottom: 2vw; /* Use viewport units for margin */
 }
-.box p{
+
+.box p {
   text-align: justify;
 }
-ul{
+
+ul {
   margin: 0;
   padding: 0;
 }
-.box li{
+
+.box li {
   display: inline-block;
-  margin: 6px;
+  margin: 1vw; /* Use viewport units for margin */
   list-style: none;
 }
-.box li a{
+
+.box li a {
   color: white;
   text-decoration: none;
-  font-size: 60px;
-  transition: all ease-in-out 250ms;
+  font-size: 4vw; /* Use viewport units for font size */
+  transition: all ease-in-out 0.25s;
 }
-.box li a:hover{
+
+.box li a:hover {
   color: #b9b9b9;
 }
 
@@ -55,15 +65,11 @@ ul{
   display: inline-block;
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
-  padding: 10px 20px;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
+  padding: 2vw 4vw; /* Use viewport units for padding */
+  border: 0.2vw solid #ffffff; /* Use viewport units for border */
+  border-radius: 1vw; /* Use viewport units for border-radius */
   text-decoration: none;
   position: absolute;
-  top: 10px; /* Adjust the top and right values to position your button */
-  right: 10px;
-
-  
-  
-
+  top: 2vw; /* Use viewport units for position */
+  right: 2vw; /* Use viewport units for position */
 }
