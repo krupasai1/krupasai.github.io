@@ -1,122 +1,40 @@
-/* Reset default margin and padding */
 body {
   margin: 0;
   padding: 0;
-}
-
-/* Set background and ensure full viewport height */
-body {
   background: url('bg.jpg') no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-/* Main container styles */
+/* General styles */
 .box {
-  max-width: 80%;
   background: rgba(0, 0, 0, 0.4);
   padding: 5%;
   text-align: center;
-  margin: 5% auto;
   color: white;
   font-family: 'Century Gothic', sans-serif;
+  max-width: 80%;
+  margin: 5% auto;
+  border-radius: 10px; /* Add border radius */
 }
 
-/* Image styles */
 .box-img {
   border-radius: 50%;
-  max-width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
 }
 
-/* Heading styles */
-.box h1 {
-  font-size: 4vw;
-  letter-spacing: 0.4vw;
-  font-weight: 100;
-  margin-bottom: 2vw;
-}
+/* Other styles... */
 
-/* Subheading styles */
-.box h5 {
-  font-size: 2vw;
-  letter-spacing: 0.3vw;
-  font-weight: 100;
-  margin-bottom: 2vw;
-}
-
-/* Paragraph styles */
-.box p {
-  text-align: justify;
-}
-
-/* List styles */
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.box li {
-  display: inline-block;
-  margin: 1vw;
-  list-style: none;
-}
-
-/* Social media icon link styles */
-.box li a {
-  color: white;
-  text-decoration: none;
-  font-size: 4vw;
-  transition: all ease-in-out 0.25s;
-}
-
-.box li a:hover {
-  color: #b9b9b9;
-}
-
-/* PDF button styles */
-.pdf-button {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0);
-  color: #ffffff;
-  padding: 2vw 4vw;
-  border: 0.2vw solid #ffffff;
-  border-radius: 1vw;
-  text-decoration: none;
-  position: absolute;
-  top: 2vw;
-  right: 2vw;
-}
-
-/* Responsive styles for smaller screens */
+/* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   .box {
     max-width: 90%;
   }
-
-  .box h1 {
-    font-size: 6vw;
-    letter-spacing: 0.6vw;
-    margin-bottom: 4vw;
+  
+  .box-img {
+    width: 150px;
+    height: 150px;
   }
-
-  .box h5 {
-    font-size: 3vw;
-    letter-spacing: 0.4vw;
-    margin-bottom: 3vw;
-  }
-
-  .box li a {
-    font-size: 6vw;
-  }
-
-  .pdf-button {
-    padding: 4vw 6vw;
-    border-radius: 2vw;
-    top: 4vw;
-    right: 4vw;
-  }
+  
+  /* Adjust other styles as needed for smaller screens */
 }
