@@ -12,7 +12,6 @@ body {
   text-align: center;
   color: white;
   font-family: 'Century Gothic', sans-serif;
-  max-width: 80%;
   margin: 5% auto;
   border-radius: 10px; /* Add border radius */
 }
@@ -28,7 +27,9 @@ body {
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   .box {
-    max-width: 90%;
+    width: 100%; /* Stretch box to full width */
+    max-width: none; /* Remove max-width */
+    padding: 10%; /* Increase padding for better spacing */
   }
   
   .box-img {
