@@ -3,32 +3,35 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #3498db;
-    color: #fff;
+    position: relative;
     text-align: center;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    color: #fff;
+}
+
+.background-image {
+    background-image: url('https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-blur: 5px;
+    padding: 4rem;
 }
 
 .profile-image img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-right: 20px;
 }
 
 .intro h1 {
-    margin: 0;
+    margin: 10px 0 5px;
 }
 
 .intro p {
-    margin: 5px 0;
+    margin: 5px 0 20px;
 }
 
 section {
