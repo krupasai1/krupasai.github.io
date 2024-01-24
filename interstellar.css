@@ -109,7 +109,7 @@ ul li a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 2rem;
-  margin-top: 90px; /* Increase margin to create more space between white strip and projects */
+  margin-top: 0; /* Adjust margin to remove the extra space */
 }
 
 .project-card {
@@ -154,4 +154,47 @@ ul li a:hover {
   background-color: #ffffff;
 }
 
-/* ... (any other existing CSS) ... */
+@media (max-width: 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects-container {
+    margin-top: 0; /* Adjust margin to remove the extra space */
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+}
+
