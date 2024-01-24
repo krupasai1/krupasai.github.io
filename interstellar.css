@@ -109,7 +109,7 @@ ul li a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 2rem;
-  margin-top: 0; /* Adjust margin to remove the extra space */
+  margin-top: 20px; /* Adjust margin to create more space between white strip and projects */
 }
 
 .project-card {
@@ -123,8 +123,8 @@ ul li a:hover {
 
 .project-card h2 {
   font-size: 1.5rem;
-  margin-bottom: 2rem; /* Increase margin to separate project name from description */
-  font-weight: bold; /* Make project names bold */
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .project-card p {
@@ -186,7 +186,7 @@ ul li a:hover {
   }
 
   .projects-container {
-    margin-top: 0; /* Adjust margin to remove the extra space */
+    margin-top: 20px; /* Adjust margin to create more space between white strip and projects */
   }
 
   .image {
@@ -197,4 +197,3 @@ ul li a:hover {
     margin: auto;
   }
 }
-
