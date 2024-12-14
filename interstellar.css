@@ -193,7 +193,6 @@ ul li a:hover {
   background-color: var(--primary-color);
   color: #ffffff;
   border-color: var(--primary-color);
-  transform: scale(1.1);
 }
 
 @media (width < 750px) {
