@@ -1,110 +1,57 @@
 /* Import Poppins Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-:root {
-  --primary-color: #60BFC1;
-  --primary-color-dark: #8eb6fa;
-  --secondary-color: #ca8a04;
-  --text-dark: #1f2937;
-  --text-light: #6b7280;
-  --extra-light: #BADFD7; /* Blue shade used in your background */
-  --max-width: 1200px;
-}
-
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-/* Navigation Bar */
-nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #ffffff; /* White background */
-  z-index: 99;
-}
-
-.section {
-  background-color: var(--extra-light);
-}
-
-/* Projects Section */
-.projects-section {
-  background-color: var(--extra-light); /* Blue shade unchanged */
+.projects__section {
+  background-color: #BADFD7;
   padding: 4rem 1rem;
 }
 
-.section__container {
+.projects__container {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: auto;
+  text-align: center;
 }
 
-.projects-header {
-  text-align: center;
+.projects__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
   margin-bottom: 2rem;
 }
 
-.projects-header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--text-dark);
-}
-
-.projects-header p {
-  color: var(--text-light);
-  font-size: 1.1rem;
-}
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
-.project-box {
-  background-color: #fff; /* White card background */
+.project__card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-  text-align: center;
-  width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.project-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.project-box h2 {
-  font-size: 1.5rem;
-  color: var(--text-dark);
-  margin-bottom: 0.5rem;
-}
-
-.project-box p {
-  font-size: 1rem;
-  color: var(--text-light);
+.project__card img {
+  width: 100%;
+  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-.project-box a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: var(--primary-color);
-  color: #fff;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+.project__card h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
-.project-box a:hover {
-  background-color: var(--primary-color-dark);
+.project__card p {
+  color: var(--text-light);
+  line-height: 1.5;
 }
+
+.project__card:hover {
+  transform: translateY(-10px);
+}
+
