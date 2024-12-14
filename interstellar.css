@@ -187,6 +187,7 @@ ul li a:hover {
   padding: 0.5rem 1rem;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Added transition for smooth zoom effect */
 }
 
 .github-link:hover {
