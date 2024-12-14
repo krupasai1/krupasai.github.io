@@ -1,48 +1,46 @@
+/* Import Poppins Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #60BFC1;
+  --primary-color-dark: #8eb6fa;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #BADFD7; /* Blue shade used in your background */
+  --max-width: 1200px;
+}
 
 /* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", Arial, sans-serif; /* Use Poppins font */
+  font-family: "Poppins", sans-serif;
 }
 
-/* White Strip and Navigation (Unchanged) */
-.header .white-strip {
-  background-color: #fff; /* White background */
-  padding: 1rem 0;
-  position: sticky;
+/* Navigation Bar */
+nav {
+  width: 100%;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  left: 0;
+  background-color: #ffffff; /* White background */
+  z-index: 99;
 }
 
-.nav-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #0056b3;
+.section {
+  background-color: var(--extra-light);
 }
 
 /* Projects Section */
 .projects-section {
+  background-color: var(--extra-light); /* Blue shade unchanged */
   padding: 4rem 1rem;
-  background-color: inherit; /* Inherit the unchanged background color */
 }
 
 .section__container {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
@@ -52,12 +50,16 @@
 }
 
 .projects-header h1 {
-  color: #333;
   font-size: 2.5rem;
   font-weight: bold;
+  color: var(--text-dark);
 }
 
-/* Project Boxes */
+.projects-header p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -66,44 +68,43 @@
 }
 
 .project-box {
-  background-color: #fff; /* White background */
+  background-color: #fff; /* White card background */
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-  width: 300px;
   text-align: center;
+  width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .project-box h2 {
   font-size: 1.5rem;
+  color: var(--text-dark);
   margin-bottom: 0.5rem;
-  color: #333;
 }
 
 .project-box p {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-light);
   margin-bottom: 1rem;
-  line-height: 1.5;
 }
 
 .project-box a {
   display: inline-block;
-  background-color: #007BFF;
-  color: #fff;
   padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
   border-radius: 5px;
+  font-weight: bold;
   text-decoration: none;
-  font-weight: 600;
   transition: background-color 0.3s ease;
 }
 
 .project-box a:hover {
-  background-color: #0056b3;
+  background-color: var(--primary-color-dark);
 }
