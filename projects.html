@@ -11,61 +11,68 @@
     <link rel="stylesheet" href="interstellar.css" />
     <title>Krupasai Shetty Portfolio</title>
   </head>
-  <style>
-      .project-card h2 + p {
-        margin-top: 15px; /* Adjust the value to your preference */
-      }
-    </style>
   <body>
-    <div class="white-strip"></div>
+    <!-- Navigation -->
     <nav>
       <div class="nav__content">
-        <div class="logo"><a href="https://www.instagram.com/krupasai_shetty">Krupasai</a></div>
+        <div class="logo">
+          <a href="https://www.instagram.com/krupasai_shetty">Krupasai</a>
+        </div>
         <label for="check" class="checkbox">
           <i class="ri-menu-line"></i>
         </label>
         <input type="checkbox" name="check" id="check" />
         <ul>
-          <li><a href="https://krupasai1.github.io/krupasai.github.io/index.html">Home</a></li>
+          <li>
+            <a href="https://krupasai1.github.io/krupasai.github.io/index.html">Home</a>
+          </li>
           <li><a href="#">About</a></li>
-          <li><a href="https://drive.google.com/file/d/1y1Y6bsc1wP6kewO_CoyuqqeXuRf9A2iy/view?usp=drivesdk">Resume</a></li>
-          <li><a href="#">Projects</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1y1Y6bsc1wP6kewO_CoyuqqeXuRf9A2iy/view?usp=drivesdk"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a href="https://krupasai1.github.io/krupasai.github.io/projects.html">Projects</a>
+          </li>
           <li><a href="mailto:ks7449@srmist.edu.in">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <section class="section">
-      <div class="section__container">
-        <div class="projects-container">
+
+    <!-- Projects Section -->
+    <section class="projects__section">
+      <div class="projects__container">
+        <h1 class="projects__title">My Projects</h1>
+        <div class="projects__grid">
           <!-- Project 1 -->
-          <div class="project-card">
-            <h2>FitnessSensorApp</h2>
-            <p>The Fitness Sensor App is a fitness companion, offering activity tracking, personalized tips, and yoga posture to help you achieve your wellness goals effortlessly.</p>
-            <a href="https://github.com/krupasai1/FitnessSensorApp" target="_blank">GitHub Link</a>
+          <div class="project__card">
+            <img src="assets/project1.jpg" alt="Project 1" />
+            <h2>Project Title 1</h2>
+            <p>
+              A short description about this project, what it does, and the technologies used.
+            </p>
           </div>
-
           <!-- Project 2 -->
-          <div class="project-card">
-            <h2>Project 2</h2>
-            <p>A short description of Project 2.</p>
-            <a href="https://github.com/your-username/project2" target="_blank">GitHub Link</a>
+          <div class="project__card">
+            <img src="assets/project2.jpg" alt="Project 2" />
+            <h2>Project Title 2</h2>
+            <p>
+              A short description about this project, what it does, and the technologies used.
+            </p>
           </div>
-
           <!-- Project 3 -->
-          <div class="project-card">
-            <h2>Project 3</h2>
-            <p>A short description of Project 3.</p>
-            <a href="https://github.com/your-username/project3" target="_blank">GitHub Link</a>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="project-card">
-            <h2>Project 4</h2>
-            <p>A short description of Project 4.</p>
-            <a href="https://github.com/your-username/project4" target="_blank">GitHub Link</a>
+          <div class="project__card">
+            <img src="assets/project3.jpg" alt="Project 3" />
+            <h2>Project Title 3</h2>
+            <p>
+              A short description about this project, what it does, and the technologies used.
+            </p>
           </div>
         </div>
       </div>
     </section>
   </body>
 </html>
+
