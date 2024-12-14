@@ -1,22 +1,6 @@
-/* Import Poppins Font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
 .projects__section {
-  background-color: #BADFD7;
-  padding: 4rem 1rem;
-}
-
-.projects__container {
-  max-width: var(--max-width);
-  margin: auto;
-  text-align: center;
-}
-
-.projects__title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 2rem;
+  background-color: var(--extra-light); /* Blue shade #BADFD7 */
+  padding: 5rem 1rem;
 }
 
 .projects__grid {
@@ -27,23 +11,16 @@
 
 .project__card {
   background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
   padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.project__card img {
-  width: 100%;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project__card h2 {
-  font-size: 1.5rem;
+.project__card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
   color: var(--primary-color);
-  margin-bottom: 1rem;
 }
 
 .project__card p {
@@ -53,5 +30,6 @@
 
 .project__card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
