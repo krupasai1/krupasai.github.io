@@ -31,12 +31,12 @@ nav {
   left: 0;
   background-color: #ffffff;
   z-index: 99;
+  padding: 0.5rem 1rem; /* Reduced padding for smaller navbar */
 }
 
 .nav__content {
   max-width: var(--max-width);
   margin: auto;
-  padding: 1.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,7 +93,7 @@ ul li a:hover {
 .projects-section {
   background-color: #BADFD7;
   padding: 3rem 1rem;
-  margin-top: 100px; /* Added margin to push the section down and create space between the navigation and the first project box */
+  margin-top: 80px; /* Reduced margin to create space between navbar and section */
 }
 
 .projects-container {
@@ -157,9 +157,9 @@ ul li a:hover {
     margin-bottom: 1rem;
   }
 
-  /* Navigation Styles for Mobile */
+  /* Mobile Menu Styles */
   .nav__content {
-    padding: 1rem;
+    padding: 0.5rem; /* Adjust padding for mobile */
   }
 
   ul {
