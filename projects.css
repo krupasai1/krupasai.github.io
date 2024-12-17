@@ -36,7 +36,7 @@ nav {
 .nav__content {
   max-width: var(--max-width);
   margin: auto;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem; /* Same padding as the first page */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,6 +48,7 @@ nav .logo a {
   color: var(--primary-color);
   transition: 0.3s;
 }
+
 nav .logo a:hover {
   color: var(--primary-color-dark);
 }
@@ -59,6 +60,7 @@ nav .checkbox {
 nav input {
   display: none;
 }
+
 nav .checkbox i {
   font-size: 2rem;
   color: var(--primary-color);
@@ -88,66 +90,97 @@ ul li a:hover {
   color: var(--secondary-color);
 }
 
-/* Projects Section */
-.projects-section {
-  background-color: #BADFD7;
-  padding: 3rem 1rem;
+.section {
+  background-color: var(--extra-light);
 }
 
-.projects-container {
+.section__container {
+  min-height: 100vh;
   max-width: var(--max-width);
   margin: auto;
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
 }
 
-.project-box {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.project-title {
+.content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.action__btns {
+  display: flex;
   gap: 1rem;
 }
 
-.book-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.project-description {
-  color: var(--text-light);
-  margin: 1rem 0;
-  line-height: 1.5;
-  max-height: 4.5rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.github-link {
-  color: var(--primary-color);
+.action__btns button {
+  font-size: 1rem;
   font-weight: 600;
-  text-align: center;
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
   border: 2px solid var(--primary-color);
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.github-link:hover {
+.hire__me {
   background-color: var(--primary-color);
   color: #ffffff;
-  border-color: var(--primary-color);
 }
 
-/* Media Queries */
-@media (width < 750px) {
+.hire__me:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.portfolio {
+  color: var(--primary-color);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
+
+@media (max-width: 750px) {
   nav .checkbox {
     display: block;
   }
@@ -172,13 +205,20 @@ ul li a:hover {
     font-size: 1.25rem;
   }
 
-  .projects-section {
-    padding: 3rem 1rem;
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .projects-container {
-    grid-template-columns: 1fr; /* Stack projects on small screens */
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
   }
 }
+
 
 
