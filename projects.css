@@ -212,21 +212,45 @@ ul li a:hover {
 }
 
 
-ul {
-  position: absolute;
-  width: 100%;
-  left: -100%; /* Hides the menu off-screen */
-  top: 85px;
-  background-color: var(--extra-light);
-  flex-direction: column;
-  text-align: center;
-  gap: 3rem;
-}
-nav #check:checked ~ ul {
-  left: 0;
+/* Responsiveness for Navigation Menu */
+@media (max-width: 768px) {
+  /* Ensure the menu is hidden off-screen by default */
+  ul {
+    position: absolute;
+    width: 100%;
+    left: -100%; /* Hides the menu off-screen */
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  /* Show menu when checkbox is checked (hamburger menu) */
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* Adjust the logo size for smaller screens */
+  nav .logo a {
+    font-size: 1.2rem;
+  }
+
+  /* Make the checkbox visible for the hamburger menu */
+  nav .checkbox {
+    display: block;
+  }
+
+  /* Hide the regular horizontal menu (flex) for smaller screens */
+  ul {
+    display: none;
+  }
 }
 
-
-.small-font {
-  font-size: 15px; /* Adjust the font size as needed */
+/* Style for the hamburger menu icon */
+.checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
 }
+
