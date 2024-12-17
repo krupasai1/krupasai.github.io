@@ -59,6 +59,7 @@ nav .checkbox {
 nav input {
   display: none;
 }
+
 nav .checkbox i {
   font-size: 2rem;
   color: var(--primary-color);
@@ -88,59 +89,11 @@ ul li a:hover {
   color: var(--secondary-color);
 }
 
-.section {
-  background-color: var(--extra-light);
-}
-
-.section__container {
-  min-height: 100vh;
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.subtitle {
-  letter-spacing: 2px;
-  color: var(--text-light);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 3rem;
-  color: var(--text-dark);
-  margin-bottom: 1rem;
-}
-
-.title span {
-  font-weight: 600;
-}
-
-.image {
-  display: grid;
-  place-items: center;
-}
-
-.image img {
-  width: min(25rem, 90%);
-  border-radius: 100%;
-}
-
 /* Projects Section */
 .projects-section {
   background-color: #BADFD7;
   padding: 3rem 1rem;
+  margin-top: 100px; /* Added margin to push the section down and create space between the navigation and the first project box */
 }
 
 .projects-container {
@@ -195,7 +148,7 @@ ul li a:hover {
   border-color: var(--primary-color);
 }
 
-@media (width < 750px) {
+@media (max-width: 750px) {
   .projects-container {
     grid-template-columns: 1fr;
   }
@@ -203,54 +156,91 @@ ul li a:hover {
   .project-box {
     margin-bottom: 1rem;
   }
-}
 
-.projects-section {
-  background-color: #BADFD7;
-  padding: 3rem 1rem;
-  margin-top: 100px; /* Added margin to push the section down and create space between the navigation and the first project box */
-}
+  /* Navigation Styles for Mobile */
+  .nav__content {
+    padding: 1rem;
+  }
 
-
-/* Responsiveness for Navigation Menu */
-@media (max-width: 768px) {
-  /* Ensure the menu is hidden off-screen by default */
   ul {
     position: absolute;
-    width: 100%;
-    left: -100%; /* Hides the menu off-screen */
     top: 85px;
+    left: -100%;
+    width: 100%;
     background-color: var(--extra-light);
     flex-direction: column;
     text-align: center;
-    gap: 3rem;
+    gap: 2rem;
+    transition: left 0.3s ease-in-out;
   }
 
-  /* Show menu when checkbox is checked (hamburger menu) */
+  /* Show menu when checkbox is checked */
   nav #check:checked ~ ul {
     left: 0;
   }
 
-  /* Adjust the logo size for smaller screens */
-  nav .logo a {
-    font-size: 1.2rem;
-  }
-
-  /* Make the checkbox visible for the hamburger menu */
-  nav .checkbox {
+  /* Style for the hamburger menu */
+  .checkbox {
     display: block;
   }
 
-  /* Hide the regular horizontal menu (flex) for smaller screens */
+  .checkbox i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+
   ul {
     display: none;
   }
 }
 
-/* Style for the hamburger menu icon */
-.checkbox i {
-  font-size: 2rem;
-  color: var(--primary-color);
-  cursor: pointer;
+/* Section for other page content */
+.section {
+  background-color: var(--extra-light);
 }
 
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
