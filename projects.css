@@ -90,6 +90,11 @@ ul li a:hover {
   color: var(--secondary-color);
 }
 
+/* Shifting navigation items to the right by 0.3cm on page 2 in normal mode */
+.page-2 nav ul li a {
+  margin-left: 0.3cm;
+}
+
 .section {
   background-color: var(--extra-light);
 }
@@ -104,82 +109,65 @@ ul li a:hover {
   gap: 4rem;
 }
 
-.content {
+/* Restoring the projects section styling */
+.projects-section {
+  background-color: #BADFD7;
+  padding: 3rem 1rem;
+}
+
+.projects-container {
+  max-width: var(--max-width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-box {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.subtitle {
-  letter-spacing: 2px;
-  color: var(--text-light);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 3rem;
-  color: var(--text-dark);
-  margin-bottom: 1rem;
-}
-
-.title span {
-  font-weight: 600;
-}
-
-.description {
-  line-height: 1.5rem;
-  color: var(--text-light);
-  margin-bottom: 2rem;
-}
-
-.action__btns {
-  display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
-.action__btns button {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  padding: 1rem 2rem;
-  outline: none;
-  border: 2px solid var(--primary-color);
-  border-radius: 10px;
-  transition: 0.3s;
-  cursor: pointer;
+.book-icon {
+  width: 24px;
+  height: 24px;
 }
 
-.hire__me {
+.project-description {
+  color: var(--text-light);
+  margin: 1rem 0;
+  line-height: 1.5;
+  max-height: 4.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.github-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.github-link:hover {
   background-color: var(--primary-color);
   color: #ffffff;
+  border-color: var(--primary-color);
 }
 
-.hire__me:hover {
-  background-color: var(--primary-color-dark);
-}
-
-.portfolio {
-  color: var(--primary-color);
-}
-
-.portfolio:hover {
-  background-color: var(--primary-color-dark);
-  color: #ffffff;
-}
-
-.image {
-  display: grid;
-  place-items: center;
-}
-
-.image img {
-  width: min(25rem, 90%);
-  border-radius: 100%;
-}
-
+/* Mobile view adjustments */
 @media (max-width: 750px) {
   nav .checkbox {
     display: block;
@@ -219,6 +207,4 @@ ul li a:hover {
     margin: auto;
   }
 }
-
-
 
