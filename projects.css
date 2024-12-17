@@ -36,7 +36,7 @@ nav {
 .nav__content {
   max-width: var(--max-width);
   margin: auto;
-  padding: 1.5rem 1rem; /* Same padding as the first page */
+  padding: 1.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -185,10 +185,11 @@ ul li a:hover {
   border-radius: 100%;
 }
 
-/* Projects Section - Restoring original CSS */
+/* Projects Section (Restored your code) */
 .projects-section {
   background-color: #BADFD7;
   padding: 3rem 1rem;
+  margin-top: 100px; /* Added margin to push the section down and create space between the navigation and the first project box */
 }
 
 .projects-container {
@@ -243,7 +244,18 @@ ul li a:hover {
   border-color: var(--primary-color);
 }
 
-/* Mobile view adjustments */
+/* Mobile view adjustments for Projects Section */
+@media (max-width: 750px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-box {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Mobile view adjustments for navigation */
 @media (max-width: 750px) {
   nav .checkbox {
     display: block;
