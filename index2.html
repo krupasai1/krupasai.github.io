@@ -373,7 +373,6 @@ img{
   display:grid;
   grid-template-columns:repeat(7, 1fr);
   gap:23px;
-
 }
 
 .skill-card{
@@ -387,7 +386,10 @@ img{
   justify-content:center;
   min-height:100px;
   box-shadow:0 4px 10px rgba(0,0,0,0.02);
-  transition:transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
   cursor:pointer;
   text-align:center;
 }
@@ -987,6 +989,7 @@ footer{
         class="menu-toggle"
         aria-label="Open navigation menu"
         aria-expanded="false"
+        type="button"
       >
         <span></span>
         <span></span>
@@ -1114,7 +1117,6 @@ footer{
 
 
     <div class="about-grid">
-
 
       <div class="profile-wrap">
 
@@ -1281,7 +1283,7 @@ footer{
 
 <!-- =======================================================
      SKILLS
-======================================================= -->
+========================================================= -->
 
 <section class="section cream" id="skills">
 
@@ -1311,161 +1313,126 @@ footer{
 
     <div class="skills-grid">
 
-
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img src="./assets/python.svg" alt="Python">
         </div>
-
         <span>Python</span>
-
       </div>
 
 
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img src="./assets/spark.svg" alt="PySpark">
         </div>
-
         <span>PySpark</span>
-
       </div>
 
 
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img
             class="sql-icon"
-            src="assets/sql.svg"
+            src="./assets/sql.svg"
             alt="SQL"
           >
         </div>
-
         <span>SQL</span>
-
       </div>
 
 
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img
-            src="assets/databricks.svg"
+            src="./assets/databricks.svg"
             alt="Databricks"
           >
         </div>
-
         <span>Databricks</span>
-
       </div>
 
 
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img
-            src="assets/github1.svg"
+            src="./assets/github1.svg"
             alt="Git & GitHub"
           >
         </div>
-
         <span>Git &amp; GitHub</span>
-
       </div>
 
 
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img
             class="azure-icon"
-            src="assets/azure.webp"
+            src="./assets/azure.webp"
             alt="Azure"
           >
         </div>
-
         <span>Azure</span>
-
       </div>
 
 
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img
             class="aws-icon"
-            src="assets/aws.svg"
+            src="./assets/aws.svg"
             alt="AWS"
           >
         </div>
-
         <span>AWS</span>
-
       </div>
 
 
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img
             class="linux-icon"
-            src="assets/linux.svg"
+            src="./assets/linux.svg"
             alt="Linux"
           >
         </div>
-
         <span>Linux</span>
-
       </div>
 
 
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img
             class="iics-icon"
-            src="assets/iics.jpg"
+            src="./assets/iics.jpg"
             alt="Informatica IICS"
           >
         </div>
-
         <span>Informatica IICS</span>
-
       </div>
 
 
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img
             class="powercenter-icon"
-            src="assets/powercenter.jpg"
+            src="./assets/powercenter.jpg"
             alt="Informatica PowerCenter"
           >
         </div>
-
         <span>Informatica PowerCenter</span>
-
       </div>
 
 
       <div class="skill-card">
-
         <div class="skill-icon-wrap">
           <img
             class="odi-icon"
-            src="assets/odi.jpeg"
+            src="./assets/odi.jpeg"
             alt="Oracle Data Integrator (ODI)"
           >
         </div>
-
         <span>Oracle Data Integrator (ODI)</span>
-
       </div>
-
 
     </div>
 
@@ -1513,7 +1480,7 @@ footer{
         <div class="project-image">
 
           <img
-            src="assets/project1.png"
+            src="./assets/project1.png"
             alt="Ecommerce Lakehouse Data Pipeline"
           >
 
@@ -1542,12 +1509,10 @@ footer{
 
 
           <div class="tags">
-
             <span class="tag">Databricks</span>
             <span class="tag">PySpark</span>
             <span class="tag">Delta Lake</span>
             <span class="tag">PostgreSQL</span>
-
           </div>
 
 
@@ -1572,7 +1537,7 @@ footer{
         <div class="project-image">
 
           <img
-            src="assets/project2.avif"
+            src="./assets/project2.avif"
             alt="University Analytics System"
           >
 
@@ -1601,11 +1566,9 @@ footer{
 
 
           <div class="tags">
-
             <span class="tag">IICS</span>
             <span class="tag">SQL</span>
             <span class="tag">Oracle</span>
-
           </div>
 
 
@@ -1628,7 +1591,7 @@ footer{
         <div class="project-image">
 
           <img
-            src="assets/project3.jpeg"
+            src="./assets/project3.jpeg"
             alt="Sales Insights"
           >
 
@@ -1652,10 +1615,8 @@ footer{
 
 
           <div class="tags">
-
             <span class="tag">Power BI</span>
             <span class="tag">SQL</span>
-
           </div>
 
 
@@ -1669,7 +1630,6 @@ footer{
         </div>
 
       </article>
-
 
     </div>
 
@@ -1705,7 +1665,6 @@ footer{
 
     <div class="cert-grid">
 
-
       <a
         class="cert"
         href="https://credentials.databricks.com/a6df204d-fac2-4e30-a387-99bea9a57f1f#acc.T0Vhs5Mv"
@@ -1714,10 +1673,9 @@ footer{
       >
 
         <img
-          src="assets/databricks-cert.png"
+          src="./assets/databricks-cert.png"
           alt="Databricks logo"
         >
-
 
         <div>
 
@@ -1733,7 +1691,6 @@ footer{
 
       </a>
 
-
     </div>
 
   </div>
@@ -1748,7 +1705,6 @@ footer{
 <section class="contact" id="contact">
 
   <div class="container contact-grid">
-
 
     <div>
 
@@ -1769,7 +1725,6 @@ footer{
 
 
     <div class="contact-links">
-
 
       <a
         class="contact-link"
@@ -1807,7 +1762,6 @@ footer{
       >
         Resume PDF <span>&rarr;</span>
       </a>
-
 
     </div>
 
