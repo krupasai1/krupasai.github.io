@@ -48,6 +48,19 @@ h2{margin:3px 0 0;font-size:23px}
 .highrisk{background:#fffafa}
 .footer{text-align:center;color:var(--muted);font-size:12px;padding:30px 20px 50px}
 @media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}.phasehead{align-items:flex-start;flex-direction:column}.priority{align-self:flex-start}}
+
+/* SQL REFERENCE NOTES */
+.sql-notes{background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:18px;margin:28px 0 18px;padding:24px}
+.sql-notes-header{padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:18px}
+.sql-notes h2{margin:4px 0 8px;font-size:23px}
+.sql-notes-header p{margin:0;color:var(--muted);font-size:14px;line-height:1.6;max-width:850px}
+.sql-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.sql-part{background:#fbfcfe;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.sql-part h3{margin:0 0 12px;font-size:15px}
+.sql-part ul{margin:0;padding-left:20px}
+.sql-part li{color:var(--muted);font-size:13px;line-height:1.45;margin:5px 0}
+@media(max-width:700px){.sql-grid{grid-template-columns:1fr}.sql-notes{padding:18px}}
+
 </style>
 </head>
 <body>
@@ -1288,148 +1301,35 @@ h2{margin:3px 0 0;font-size:23px}
           </label></div>
       </section>
   <!-- SQL INTERVIEW ROADMAP NOTES -->
+
 <section class="sql-notes">
   <div class="sql-notes-header">
-    <div>
-      <div class="eyebrow">SQL INTERVIEW TRACK</div>
-      <h2>📌 SQL — 6-Part Roadmap</h2>
-      <p>
-        Follow these parts in order. Parts 1–4 build the SQL foundation,
-        Part 5 focuses on interview problem-solving, and Part 6 covers SQL theory and optimization.
-      </p>
-    </div>
+    <div class="eyebrow">REFERENCE NOTES • SQL INTERVIEW TRACK</div>
+    <h2>📌 SQL — 6-Part Roadmap</h2>
+    <p>Use this as the complete SQL reference track alongside Phase 3 (SQL Coding / SQL DSA) and Phase 5 (SQL Theory). Follow Parts 1 → 6 in order.</p>
   </div>
-
   <div class="sql-grid">
-
-    <div class="sql-part">
-      <h3>🔴 Part 1 — SQL Fundamentals</h3>
-      <ul>
-        <li>SELECT</li>
-        <li>WHERE</li>
-        <li>DISTINCT</li>
-        <li>ORDER BY</li>
-        <li>LIMIT / FETCH</li>
-        <li>NULL</li>
-        <li>CASE</li>
-        <li>COALESCE / NVL</li>
-        <li>CAST / CONVERT</li>
-        <li>String functions</li>
-        <li>Date functions</li>
-        <li>Numeric functions</li>
-        <li>Aggregate functions</li>
-        <li>GROUP BY</li>
-        <li>HAVING</li>
-      </ul>
-    </div>
-
-    <div class="sql-part">
-      <h3>🔴 Part 2 — Joins</h3>
-      <ul>
-        <li>INNER JOIN</li>
-        <li>LEFT JOIN</li>
-        <li>RIGHT JOIN</li>
-        <li>FULL JOIN</li>
-        <li>CROSS JOIN</li>
-        <li>SELF JOIN</li>
-        <li>Multiple joins</li>
-        <li>Join conditions</li>
-        <li>JOIN vs WHERE</li>
-        <li>Duplicate rows caused by joins</li>
-        <li>Anti-joins</li>
-        <li>EXISTS / NOT EXISTS</li>
-      </ul>
-    </div>
-
-    <div class="sql-part">
-      <h3>🔴 Part 3 — Subqueries & CTEs</h3>
-      <ul>
-        <li>Scalar subqueries</li>
-        <li>Correlated subqueries</li>
-        <li>IN</li>
-        <li>EXISTS</li>
-        <li>NOT EXISTS</li>
-        <li>CTE</li>
-        <li>Multiple CTEs</li>
-        <li>Recursive CTE — awareness</li>
-        <li>CTE vs subquery</li>
-      </ul>
-    </div>
-
-    <div class="sql-part">
-      <h3>🔴 Part 4 — Window Functions</h3>
-      <ul>
-        <li>ROW_NUMBER</li>
-        <li>RANK</li>
-        <li>DENSE_RANK</li>
-        <li>LAG</li>
-        <li>LEAD</li>
-        <li>FIRST_VALUE</li>
-        <li>LAST_VALUE</li>
-        <li>SUM() OVER</li>
-        <li>AVG() OVER</li>
-        <li>COUNT() OVER</li>
-        <li>PARTITION BY</li>
-        <li>ORDER BY</li>
-        <li>Window frames</li>
-        <li>Running totals</li>
-        <li>Moving averages</li>
-        <li>Previous / next record</li>
-        <li>Ranking within groups</li>
-      </ul>
-    </div>
-
-    <div class="sql-part">
-      <h3>🔴 Part 5 — SQL DSA / Problem Solving</h3>
-      <ul>
-        <li>Second highest salary</li>
-        <li>Nth highest salary</li>
-        <li>Top N per group</li>
-        <li>Duplicate records</li>
-        <li>Remove duplicates</li>
-        <li>Latest record per customer</li>
-        <li>Customers with no transactions</li>
-        <li>Employees earning more than manager</li>
-        <li>Consecutive records</li>
-        <li>Missing records</li>
-        <li>Gaps & islands</li>
-        <li>Month-over-month growth</li>
-        <li>Running totals</li>
-        <li>Ranking problems</li>
-        <li>Retention-style problems</li>
-        <li>Customer transaction problems</li>
-        <li>Date-gap problems</li>
-        <li>Conditional aggregation</li>
-        <li>Complex analytical queries</li>
-      </ul>
-    </div>
-
-    <div class="sql-part">
-      <h3>🔴 Part 6 — SQL Theory</h3>
-      <ul>
-        <li>Logical query processing order</li>
-        <li>Primary key</li>
-        <li>Foreign key</li>
-        <li>Constraints</li>
-        <li>NULL behavior</li>
-        <li>Views</li>
-        <li>Stored procedures</li>
-        <li>Transactions</li>
-        <li>ACID</li>
-        <li>Indexes</li>
-        <li>Clustered / non-clustered concepts</li>
-        <li>Composite indexes</li>
-        <li>Index selectivity</li>
-        <li>Full table scans</li>
-        <li>Query execution plans</li>
-        <li>Sargability</li>
-        <li>Join performance</li>
-        <li>Query optimization</li>
-      </ul>
-    </div>
-
+    <div class="sql-part"><h3>🔴 Part 1 — SQL Fundamentals</h3><ul>
+      <li>SELECT</li><li>WHERE</li><li>DISTINCT</li><li>ORDER BY</li><li>LIMIT / FETCH</li><li>NULL</li><li>CASE</li><li>COALESCE / NVL</li><li>CAST / CONVERT</li><li>String functions</li><li>Date functions</li><li>Numeric functions</li><li>Aggregate functions</li><li>GROUP BY</li><li>HAVING</li>
+    </ul></div>
+    <div class="sql-part"><h3>🔴 Part 2 — Joins</h3><ul>
+      <li>INNER</li><li>LEFT</li><li>RIGHT</li><li>FULL</li><li>CROSS</li><li>SELF JOIN</li><li>Multiple joins</li><li>Join conditions</li><li>JOIN vs WHERE</li><li>Duplicate rows caused by joins</li><li>Anti-joins</li><li>EXISTS / NOT EXISTS</li>
+    </ul></div>
+    <div class="sql-part"><h3>🔴 Part 3 — Subqueries &amp; CTEs</h3><ul>
+      <li>Scalar subqueries</li><li>Correlated subqueries</li><li>IN</li><li>EXISTS</li><li>NOT EXISTS</li><li>CTE</li><li>Multiple CTEs</li><li>Recursive CTE — awareness</li><li>CTE vs subquery</li>
+    </ul></div>
+    <div class="sql-part"><h3>🔴 Part 4 — Window Functions</h3><ul>
+      <li>ROW_NUMBER</li><li>RANK</li><li>DENSE_RANK</li><li>LAG</li><li>LEAD</li><li>FIRST_VALUE</li><li>LAST_VALUE</li><li>SUM() OVER</li><li>AVG() OVER</li><li>COUNT() OVER</li><li>PARTITION BY</li><li>ORDER BY</li><li>Window frames</li><li>Running totals</li><li>Moving averages</li><li>Previous/next record</li><li>Ranking within groups</li>
+    </ul></div>
+    <div class="sql-part"><h3>🔴 Part 5 — SQL DSA / Problem-Solving Patterns</h3><ul>
+      <li>Second highest salary</li><li>Nth highest salary</li><li>Top N per group</li><li>Duplicate records</li><li>Remove duplicates</li><li>Latest record per customer</li><li>Customers with no transactions</li><li>Employees earning more than manager</li><li>Consecutive records</li><li>Missing records</li><li>Gaps &amp; islands</li><li>Month-over-month growth</li><li>Running totals</li><li>Ranking problems</li><li>Retention-style problems</li><li>Customer transaction problems</li><li>Date-gap problems</li><li>Conditional aggregation</li><li>Complex analytical queries</li>
+    </ul></div>
+    <div class="sql-part"><h3>🔴 Part 6 — SQL Theory</h3><ul>
+      <li>Logical query processing order</li><li>Primary key</li><li>Foreign key</li><li>Constraints</li><li>NULL behavior</li><li>Views</li><li>Stored procedures</li><li>Transactions</li><li>ACID</li><li>Indexes</li><li>Clustered/non-clustered concepts</li><li>Composite indexes</li><li>Index selectivity</li><li>Full table scans</li><li>Query execution plans</li><li>Sargability</li><li>Join performance</li><li>Query optimization</li>
+    </ul></div>
   </div>
 </section>
+
 </main>
 <div class="footer">Amazon SPIV Data Engineer I • Personal study tracker • Checkbox progress is saved in this browser.</div>
 <script>
